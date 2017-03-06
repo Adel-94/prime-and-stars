@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title> 06.03.2017 </title>
+
+</head>
+
+<body>
+    <script>
+       function primeNumber(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return 'sadedir' ;
+  }else
+  {
+    for(var i = 2; i < n; i++)
+    {
+      if(n % i === 0)
+      {
+       return 'murekkebdir';
+      }
+    } 
+    return 'sadedir' ; 
+  }
+}
+
+console.log(primeNumber(1));
+    </script>
+
+
+
+</body>
+
+</html>
