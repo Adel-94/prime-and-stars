@@ -5,22 +5,20 @@
 </head>
 
 <body>
-
+    </style>
     <script>
-        function star(value) {
-            var char1 = '';
-
-            for (var i = 1; i <= value; i++) {
-                char1 = char1 + '*';
-                console.log(char1);
-
-
-            }
-
+        var bosluq = '';
+        var m = new Array;
+        var value = Number(prompt('enter the number:   '));
+        var simple = '';
+        for (var i = 0; i < value; i++) {
+            simple = simple + ' * ';
+            m[i] = simple;
+            console.log(m[i]);
         }
-
-
-        console.log(star(5));
+        for (var j = value - 2; j >= 0; j--) {
+            console.log(m[j]);
+        }
     </script>
 </body>
 
